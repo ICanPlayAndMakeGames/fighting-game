@@ -1,0 +1,45 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Sheet.css" >
+</head>
+<body>
+
+    <div style="position: relative; display: inline-block;">
+        <div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px;">
+            
+            <!--player HpBar-->
+            <div style="position: relative; width: 100%; display: flex; justify-content: flex-end; border-top: 4px solid white; border-left: 4px solid white; border-bottom: 4px solid white;">
+                <div style="background-color: red; height: 30px; width: 100%;"></div>
+                <div id="playerHp" style="position: absolute; background: #b18bed; top: 0; right: 0; width: 100%; bottom: 0;"></div>
+            </div>
+
+            <!--Timmer-->
+
+            <div id="timer" class="Box"> 10 </div>
+       
+             <!--enemy HpBar-->
+
+            <div style="position: relative; width: 100%; border-top: 4px solid white; border-right: 4px solid white; border-bottom: 4px solid white;">
+                <div style="background-color: blue; height: 30px;"></div>
+                <div id="enemyHp" style="position: absolute; background: #b18bed; top: 0; right: 0; left: 0; bottom: 0;"></div>
+            </div>
+            <div></div>
+        </div>
+        <div id="DisplayTextB" class="DisplayB">Tie</div>
+    <canvas></canvas>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" 
+        integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
+<script src="Js/Settings.js"></script>
+<script src="Js/MovementMaker.js"></script>
+<script src="Js/Movement.js"></script>     
+<script src="Js/Utils.js"></script> 
+<script src="Js/Classes.js"></script>   
+<script src="index.js"></script>
+
+
+</body>
